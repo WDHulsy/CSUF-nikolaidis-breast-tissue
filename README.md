@@ -1,5 +1,6 @@
 # CSUF-nikolaidis-breast-tissue
 Code made for a breast tissue project in the lab of Dr. Nikolaidis at CSU Fullerton.
+Code Authors: Dr. Nikolas Nikolaidis, Drew Hulsy, Yonny Chavez, Karen Salazar
 
 Script 1: build_sce_from_python_export.R
 
