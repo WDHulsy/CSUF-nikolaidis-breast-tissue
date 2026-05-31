@@ -38,7 +38,7 @@ Script 5: tbd
 Script 6: tbd
 --------------------------
 
-Script 7: DEG_analysis.R -   Primary differential expression analysis with DESeq2 (Drew H.) 
+Script 7: DEG_analysis.R - Primary differential expression analysis with DESeq2 (Drew H.) 
 --------------------------
 Performs DESeq2 differential expression analysis for two comparisons: (1) AA vs CW across the full cohort; (2) G1 vs G2 transcriptomic groups. Generates volcano plots and PCA plots for both comparisons. Produces ranked gene lists (.rnk files) for downstream GSEA. 
 
@@ -48,4 +48,10 @@ Required inputs:
  salmon.merged.gene_counts-names-changed-bad-removed.tsv - gene counts from nf-core/rnaseq with low-quality samples removed
  lipid_BR_coldata_v1.csv - sample metadata with Race column (AA/CW) 
  lipid_BR_coldata_v2.csv - sample metadata with Group column (G1/G2) 
- 
+
+Script 8: topGO_analysis.R -   Gene Ontology enrichment analysis using topGO (Drew H.) 
+--------------------------
+Runs topGO GO Biological Process enrichment (weight01 algorithm, Fisher test) on upregulated and downregulated gene sets from the G1 vs G2 DEG analysis. Generates bar plots of top enriched terms. Requires working ensembl mirror.
+
+Required packages: DESeq2, tidyverse, topGO, biomaRt, GO.db, Rgraphviz
+
