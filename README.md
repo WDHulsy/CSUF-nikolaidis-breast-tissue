@@ -4,7 +4,8 @@ Code Authors: Dr. Nikolas Nikolaidis, Drew Hulsy, Yonny Chavez, Karen Salazar
 
 
 Script 1: build_sce_from_python_export.R - Build a SingleCellExperiment reference from Python-exported sparse matrix files
----------------
+--------------------------
+
 Constructs the SCE reference object required by MuSiC from files exported from Python (scanpy/AnnData). Input directory must contain: counts_genes_by_cells.mtx, genes.tsv, cells.tsv, and cell_metadata.tsv with cell_type and donor_id columns.
 
 Required packages: Matrix, SingleCellExperiment
@@ -15,4 +16,7 @@ Converts a breast tissue single-cell atlas in h5ad format (e.g., CellXGene or pu
 
 Required packages: Seurat, SeuratDisk, SingleCellExperiment, dpylr
 
+Script 3: deconvolution.R - MuSiC bulk deconvolution — primary run script (Drew H.)
+--------------------------
+Runs MuSiC deconvolution using the pre-built SCE reference. Outputs cell-type proportion estimates in wide and long format, generates boxplots by G1/G2 and by race within G1, and runs Wilcoxon rank-sum tests with BH correction.
 
