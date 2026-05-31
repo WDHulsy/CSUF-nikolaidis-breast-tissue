@@ -26,3 +26,11 @@ input/bulk_counts.tsv - gene_id | gene_name | sample columns
 input/metadata.tsv - sample_id | group | race 
 reference/breast_ref_sce.rds - SCE from Script 1 or 2 
 
+Script 4: deconvolution_filter.R - revised with gene filtering and sparse matrix optimisation
+--------------------------
+Revised version of Script 3. Key differences: removes non-numeric columns from bulk matrix automatically; filters SCE to genes expressed in >10% of cells; converts SCE assay to sparse dgCMatrix for memory efficiency; uses bulk.mtx interface instead of ExpressionSet. Requires cell_type and donor_id column names in SCE (adjust if different). 
+
+
+ Additional required packagesL Matrix, scater
+
+ 
