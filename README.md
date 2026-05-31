@@ -13,6 +13,6 @@ Script 2: build_rds.R - Build breast reference SCE from h5ad atlas — with cell
 --------------------------
 Converts a breast tissue single-cell atlas in h5ad format (e.g., CellXGene or published atlas) to an SCE for MuSiC. Cell types are collapsed into broad categories. Update celltype_col and sample_col to match the atlas metadata column names.
 
-Required packages: Seurat, SeuratDisk, SingleCellExperiment, dpylr
+Required packages: Seurat, SeuratDisk, SingleCellExperiment, dpylr, zellkonverter, capseuratconverter
 
 
