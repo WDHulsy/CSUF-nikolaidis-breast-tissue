@@ -2,13 +2,10 @@ library(Seurat)
 library(SeuratDisk)
 library(SingleCellExperiment)
 library(dplyr)
-library(zellkonverter)
-library(capseuratconverter)
 
 setwd("path/to/reference")
 
 h5ad_file <- "breast_atlas.h5ad"
-sce <- readH5AD(h5ad_file)
 output_file <- "breast_ref_sce.rds"
 Convert(h5ad_file, dest = "h5seurat", overwrite = TRUE)
 
