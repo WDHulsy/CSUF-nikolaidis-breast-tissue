@@ -20,3 +20,9 @@ Script 3: deconvolution.R - MuSiC bulk deconvolution — primary run script (Dre
 --------------------------
 Runs MuSiC deconvolution using the pre-built SCE reference. Outputs cell-type proportion estimates in wide and long format, generates boxplots by G1/G2 and by race within G1, and runs Wilcoxon rank-sum tests with BH correction.
 
+Required packages: MuSiC, SingleCellExperiment, Biobase, ggplot2, dplyr, tidyr
+Required inputs: 
+input/bulk_counts.tsv - gene_id | gene_name | sample columns 
+input/metadata.tsv - sample_id | group | race 
+reference/breast_ref_sce.rds - SCE from Script 1 or 2 
+
