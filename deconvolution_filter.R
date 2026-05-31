@@ -8,7 +8,7 @@ suppressPackageStartupMessages({
   library(tidyr)
 })
 
-setwd("C:/Users/drewh/Documents/DrNikolaidisMaterials/Lipidomics/deconvolution")
+setwd("path/to/your/directory")
 
 dir.create("results", showWarnings = FALSE)
 dir.create("plots", showWarnings = FALSE)
