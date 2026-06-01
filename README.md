@@ -55,3 +55,6 @@ Runs topGO GO Biological Process enrichment (weight01 algorithm, Fisher test) on
 
 Required packages: DESeq2, tidyverse, topGO, biomaRt, GO.db, Rgraphviz
 
+Required inputs:
+ Group_DEG, Group_DEG_up, Group_DEG_down - created by Script 7
+
