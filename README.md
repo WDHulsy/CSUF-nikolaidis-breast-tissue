@@ -14,15 +14,25 @@ All scripts are available at https://github.com/WDHulsy/CSUF-nikolaidis-breast-t
 Contents 
 --------------------------
 Script 1  —  build_sce_from_python_export.R  —  Build SCE reference from Python-exported matrix 
+
 Script 2  —  build_rds.R  —  Build SCE reference from h5ad atlas file 
+
 Script 3  —  deconvolution.R  —  MuSiC bulk deconvolution 
+
 Script 4  —  deconvolution_filter.R  —  MuSiC deconvolution with gene filtering and sparse matrix optimization 
+
 Script 5  —  MuSiC_deconvolution_analysis.R  —  Collapsed categories, Wilcoxon tests, boxplots 
+
 Script 6  —  DESeq2_composition_corrected.R  —  Composition-corrected DESeq2 G1 vs G2 
+
 Script 7  —  DEG_analysis.R  —  Primary DESeq2: AA vs CW and G1 vs G2 (Drew H.) 
+
 Script 8  —  topGO_analysis.R  —  GO enrichment for G1 vs G2 DEGs (Drew H.) 
+
 Script 9  —  GSEA_fgsea.R  —  Gene set enrichment analysis (Drew H.) 
+
 Script 10  —  Within_Group_DEG.R  —  AA vs CW within G1 and G2 (Drew H.) 
+
 Software Versions  —  nf-core/rnaseq pipeline and R package versions
 
 Code Authors: Dr. Nikolas Nikolaidis, Drew Hulsy, Yonny Chavez, Karen Salazar
@@ -120,37 +130,65 @@ Versions recorded from nf-core/rnaseq pipeline execution (software_versions.yml)
 nf-core/rnaseq pipeline 
 --------------------------
 nf-core/rnaseq:   3.14.0 
+
 Nextflow:         23.04.1 
+
 STAR:             2.7.10a  (alignment) 
+
 Salmon:           1.9.0    (quantification) 
+
 Picard:           2.27.4   (duplicate marking) 
+
 SAMtools:         1.16.1   (BAM processing) 
+
 FastQC:           0.11.9   (QC) 
+
 MultiQC:          see pipeline report 
+
 TrimGalore:       0.6.7    (adapter trimming) 
+
 Cutadapt:         3.4 
+
 DESeq2 (QC):      1.28.0   (pipeline internal QC only) 
+
 R (pipeline):     4.0.3 - 4.2.1 (pipeline modules) 
 
 R analysis environment 
 --------------------------
 R:                    >= 4.4.0 
+
 DESeq2:               1.46.0 
+
 MuSiC:                0.2.0 
+
 SingleCellExperiment: 1.28.0 
+
 Seurat:               5.x 
+
 SeuratDisk:           0.0.0.9021 
+
 topGO:                2.58.0 
+
 fgsea:                1.32.2 
+
 pcaExplorer:          3.0.0 
+
 biomaRt:              2.62.1 
+
 tidyverse:            2.0.0 
+
 ggplot2:              3.5.1 
+
 dplyr:                1.1.4 
+
 tidyr:                1.3.1 
+
 Matrix:               1.7.0 
+
 Rtsne:                0.17 
+
 BinfTools:            1.0.0 
+
 Rgraphviz:            2.50.0 
 
  
