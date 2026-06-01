@@ -1,8 +1,8 @@
 # CSUF-nikolaidis-breast-tissue
 
-Population-associated molecular variation in normal breast tissue: a pilot multi-omic analysis
----------------------------
-# Supplementary Code Repository
+# Population-associated molecular variation in normal breast tissue: a pilot multi-omic analysis
+Supplementary Code Repository
+--------------------------
 
 This document contains descriptions of R scripts used in all transcriptomic analyses, including primary DESeq2 differential expression, topGO enrichment, GSEA, within-group comparisons, cell-type deconvolution, and composition-corrected modeling. All code runs in standard R (≥ 4.4.0). Required packages are listed at the top of each script. Lipidomic analyses were performed using MetaboAnalyst (v6.0; https://www.metaboanalyst.ca). nf-core/rnaseq pipeline parameters and software versions are listed at the end of this document. 
 
