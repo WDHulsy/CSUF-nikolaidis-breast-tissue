@@ -73,7 +73,7 @@ Additional required packages: Matrix, scater
 
 Script 5: MuSiC_deconvolution_analysis.R - Collapsed category Wilcoxon tests and boxplots for manuscript figures 
 --------------------------
-Takes pre-computed MuSiC proportions and collapses individual cell types into four broad categories. Runs Wilcoxon rank-sum tests with BH correction for both G1 vs G2 and AA vs CW within G1. Generates publication-ready boxplots. Results reported in Supplementary Table S9. 
+Takes pre-computed MuSiC proportions and collapses individual cell types into four broad categories. Runs Wilcoxon rank-sum tests with BH correction for both G1 vs G2 and AA vs CW within G1. Generates publication-ready boxplots. Results reported in Supplementary Table S3. 
 
 Required packages: MuSiC, DESeq2, SingleCellExperiment, dpylr, tidyr, ggplot2, ggpubr
 
