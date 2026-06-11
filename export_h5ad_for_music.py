@@ -4,7 +4,7 @@ import scipy.sparse as sp
 from scipy.io import mmwrite
 import os
 
-os.chdir("C:/Users/drewh/Documents/DrNikolaidisMaterials/Lipidomics/deconvolution/reference")
+os.chdir("path/to/your/directory")
 
 H5AD = "breast_atlas.h5ad"
 OUT = "music_reference_export"
