@@ -33,6 +33,8 @@ Script 9  —  GSEA_fgsea.R  —  Gene set enrichment analysis (Drew H.)
 
 Script 10  —  Within_Group_DEG.R  —  AA vs CW within G1 and G2 (Drew H.) 
 
+Script 11 — export_h5ad_for_music.py — Python preprocessing steps for Script 1
+
 Software Versions  —  nf-core/rnaseq pipeline and R package versions
 
 Code Authors: Dr. Nikolas Nikolaidis, Drew Hulsy, Yonny Chavez, Karen Salazar
@@ -134,6 +136,12 @@ Script 10: Within_Group_DEG.R - AA vs CW differential expression within G1 and G
 Runs DESeq2 separately within G1 (n=10) and G2 (n=12) to compare AA vs CW within each baseline transcriptomic state. Generates volcano plots, PCA, and GSEA input files for each subgroup. Only G1 yielded significant population-associated DEGs. Outputs can be substituted for Script 8 and 9 if desired.
 
 Required inputs and packages same as Script 7.
+
+Script 11: export_h5ad_for_music.py - Python preprocessing steps for Script 1
+--------------------------
+Creats annotation data for h5ad file, including mtx file, used in Script 1.
+
+Python packages: scanpy, pandas, scipy
 
 Software Versions
 --------------------------
